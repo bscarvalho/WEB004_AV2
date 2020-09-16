@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			MultiCalculadora
+		</title>
+		<script src="script2.js"></script>
+	</head>
+	
+	<body>
+		<form action="" method="" target="" name="formCalculadora">
+
+			<div>
+				<label for="opcao"></label>
+				<input id="opcaoi" name="opcao" type="radio" value="I" checked="checked" onclick="mostraI()" />IMC
+				<input id="opcaor" name="opcao" type="radio" value="R" onclick="mostraR()" />Retângulo
+				<input id="opcaoc" name="opcao" type="radio" value="C" onclick="mostraC()" />Círculo
+				
+			</div>
+			
+			<p id="textoi" style="display:none">
+				<div>
+					<label for="peso">Peso:</label>
+					<input id="peso" name="peso" type="number" min="0" max="500" size="10" />
+				</div>
+
+				<div>
+					<label for="altura">Altura:</label>
+					<input id="altura" name="altura" type="number" min="0" max="3" size="10" />
+				</div>
+				
+				<div>
+					<button type="button" onclick="calcularIMC();">Calcular</button>
+				</div>
+			</p>
+			
+			<p id="textor" style="display:none">
+				<div>
+					<label for="base">Base:</label>
+					<input id="base" name="base" type="number" min="0" size="10" />
+				</div>
+
+				<div>
+					<label for="alturar">Altura:</label>
+					<input id="alturar" name="alturar" type="number" min="0" size="10" />
+				</div>
+				
+				<div>
+					<button type="button" onclick="calcularRetangulo();">Calcular</button>
+				</div>
+			</p>
+			
+			<p id="textoc" style="display:none">
+				<div>
+					<label for="raio">Raio:</label>
+					<input id="raio" name="raio" type="number" min="0" size="10" />
+				</div>
+				
+				<div>
+					<button type="button" onclick="calcularRaio();">Calcular</button>
+				</div>
+			</p>
+			
+		</form>
+	</body>
+
+</html>
