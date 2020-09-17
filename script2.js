@@ -1,25 +1,34 @@
 function mostraI() {
-  if (document.getElementById("opcaoi").checked == true){
-    document.getElementById("textoi").style.display = "block";
-  } else {
-    document.getElementById("textoi").style.display = "none";
-  }
+	document.getElementById("textoi").style.display = "none";
+	document.getElementById("textor").style.display = "none";
+	document.getElementById("textoc").style.display = "none";
+	if (document.getElementById("opcaoi").checked == true){
+		document.getElementById("textoi").style.display = "block";
+	} else {
+		document.getElementById("textoi").style.display = "none";
+	}
 }
 
 function mostraR() {
-  if (document.getElementById("opcaor").checked == true){
-    document.getElementById("textor").style.display = "block";
-  } else {
-    document.getElementById("textor").style.display = "none";
-  }
+	document.getElementById("textoi").style.display = "none";
+	document.getElementById("textor").style.display = "none";
+	document.getElementById("textoc").style.display = "none";
+	if (document.getElementById("opcaor").checked == true){
+		document.getElementById("textor").style.display = "block";
+	} else {
+		document.getElementById("textor").style.display = "none";
+	}
 }
 
 function mostraC() {
-  if (document.getElementById("opcaoc").checked == true){
-    document.getElementById("textoc").style.display = "block";
-  } else {
-    document.getElementById("textoc").style.display = "none";
-  }
+	document.getElementById("textoi").style.display = "none";
+	document.getElementById("textor").style.display = "none";
+	document.getElementById("textoc").style.display = "none";
+	if (document.getElementById("opcaoc").checked == true){
+		document.getElementById("textoc").style.display = "block";
+	} else {
+		document.getElementById("textoc").style.display = "none";
+	}
 }
 
 function calcularIMC() {
@@ -38,6 +47,6 @@ function calcularRetangulo() {
 
 function calcularRaio() {
 	var rai = document.getElementById("raio").value;
-	var resc = 3,14 * parseFloat(rai) * parseFloat(rai);
+	var resc = 3.14 * parseFloat(rai) * parseFloat(rai);
 	alert ("A área do círculo é " + resc);
 }
